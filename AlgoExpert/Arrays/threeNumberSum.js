@@ -1,7 +1,7 @@
 
-let array = [12, 3, 1, 2, -6, 5, -8, 6];
+let array = [1, 4, 4, 5, 5, 5, 6, 6 ,11];
 array.sort( (a, b) => a - b)
-let targetSum = 0;
+let targetSum = 10;
 let result = [];
 
 
@@ -31,8 +31,8 @@ console.log(result);
 */
 
 
-/** 
- * ! O(n^2) | space O(n)
+
+  //! O(n^2) | space O(n)
 function threeNumberSum(array, targetSum) {
     array.sort( (a, b) => a - b);
     let triplets = [];
@@ -62,4 +62,3 @@ function threeNumberSum(array, targetSum) {
 
 console.log(threeNumberSum(array, targetSum));
 
-*/
