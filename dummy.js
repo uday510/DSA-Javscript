@@ -47,7 +47,7 @@ function main() {
     else {
         result.push(arr[i]);
         result.push(arr[j]);
-        i = j+1;
+        i = j + 1;
         j = i + 1;
     }
 }
@@ -55,3 +55,33 @@ function main() {
  for(let i = 0; i < result.length; i++) {
      output += result[i];
  }
+
+}
+
+// let n = 5;
+// let arr = [1, 1, 3, 4, 5];
+// arr.sort( (a, b) => a - b)
+// let k = arr.length;
+// let i = 0;
+// let j = 1;
+// let result = [];
+// let output = 0;
+
+
+//  while( i < k && j < n ) {
+//     if (arr[i] == arr[j]) {
+//         i++;
+//         j++;
+//     }
+//     else {
+//         result.push(arr[i]);
+//         result.push(arr[j]);
+//         i = j+1;
+//         j = i + 1;
+//     }
+// }
+
+//  for(let i = 0; i < result.length; i++) {
+//      output += result[i];
+//  }
+// console.log(output);
