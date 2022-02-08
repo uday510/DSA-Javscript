@@ -4,7 +4,7 @@ class Node { //! Node class
         this.next = null;
     } 
 }
-
+// 
 class SingleLinkedList { //! linkedlist class
     constructor() {
         this.head = null;
