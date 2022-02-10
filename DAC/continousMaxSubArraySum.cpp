@@ -56,7 +56,7 @@ int continousMaxSubArraySum(int arr[], int p, int q)
 }
 
 int main () {
-    int arr[] = {20, -25, 130, 80, 10, 90, -43, 12, -40};
+    int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
 
     int p = 0;
 
