@@ -1,7 +1,6 @@
-
-function nextGreater(array) {
+//! 08/02/2022
+function nextSmaller(array) {
     let result = new Array(array.length).fill(-1);
-    // const stack = new Stack();
     const stack = [];
     
     for(let i = 0; i < array.length; i++) {
@@ -15,9 +14,7 @@ function nextGreater(array) {
     return result;
 }
 
-// let array = [2, 5, -3, -4, 6, 7, 2];
-let array = [2, 7, 3, 5, 4, 6, 8];
-// let array = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let array = [2, 7, 3, 5, 4, 6, 1];
 
 
-console.log(nextGreater(array));
+console.log(nextSmaller(array));

@@ -1,11 +1,10 @@
 //! 08/02/2022
-
-function nextGreater(array) {
+function prevGreater(array) {
     let result = new Array(array.length).fill(-1);
     const stack = [];
     
-    for(let i = 0; i < array.length; i++) {
-        while(stack.length > 0 && array[stack[stack.length - 1]] < array[i]) {
+    for(let i = array.length - 1; i >= 0; i--) {
+        while(stack.length > 0 && array[stack[stack.length - 1]] > array[i]) {
             const top = stack.pop();
             result[top] = array[i];
         }
@@ -14,6 +13,6 @@ function nextGreater(array) {
     return result;
 }
 
-let array = [2, 7, 3, 5, 4, 6, 8];
+let array = [2, 7, 3, 5, 4, 6, 1];
 
-console.log(nextGreater(array));
+console.log(prevGreater(array));
