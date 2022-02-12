@@ -1,5 +1,5 @@
 //! 08/02/2022
-function prevGreater(array) {
+function prevSmaller(array) {
     let result = new Array(array.length).fill(-1);
     const stack = [];
     
@@ -15,4 +15,4 @@ function prevGreater(array) {
 
 let array = [2, 7, 3, 5, 4, 6, 1];
 
-console.log(prevGreater(array));
+console.log(prevSmaller(array));
