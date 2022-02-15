@@ -1,4 +1,3 @@
-
 function a(arr, k) {
 
     let result = [];

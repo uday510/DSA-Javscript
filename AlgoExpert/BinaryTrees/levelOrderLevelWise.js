@@ -1,11 +1,21 @@
+//! 14/02/2022
 
-//! 10/02/2022
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+
+}
+
 class Queue {
     constructor() {
         this.data = [];
         this.rear = 0;
         this.front = 0;
     }
+   
     length() {
         return this.rear - this.front;
     }
@@ -33,28 +43,21 @@ class Queue {
     }
 }
 
-function reverseQueue() {
-   let array = [];
-   while(queue.length() > 0) {
-    array.push(queue.dequeue());
-   }
 
-   for(let i = array.length - 1; i >= 0; i--) {
-       queue.enqueue(array[i]);
-   }
+function levelOrderLevelWise(root) {
+
+    
+
 }
+const root = new Node(10);
+root.left = new Node(20);
+root.right = new Node(30);
 
+root.left.left = new Node(40);
+root.left.right = new Node(50);
 
-const queue = new Queue();
+root.right.right = new Node(60);
+root.right.right.right = new Node(70);
 
-queue.enqueue(10);
-queue.enqueue(20);
-queue.enqueue(30);
-queue.enqueue(40);
-queue.enqueue(50);
-
-reverseQueue();
-
-console.log(queue.getFront());
 
 

@@ -4,12 +4,13 @@ class Queue {
         this.rear = 0;
         this.front = 0;
     }
+   
     length() {
         return this.rear - this.front;
     }
 
     isEmpty() {
-        return this.length == 0;
+        return this.length() == 0;
     }
 
     enqueue(element) {
@@ -42,4 +43,4 @@ queue.enqueue(50);
 queue.dequeue();
 queue.dequeue();
 
-console.log(queue.getFront());
+console.log(queue.isEmpty());
