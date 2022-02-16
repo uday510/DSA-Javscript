@@ -97,6 +97,21 @@ function printRightViewAlgo2(root) {
         }
 }
 
+let maxLevelVisited = -1;
+function printRightViewAlgo3(root, current) {
+        if(root == null) return;
+
+        if(current > maxLevelVisited) {
+            console.log(root.data);
+            maxLevelVisited = current;
+        }
+
+        printRightViewAlgo3(root.right, current + 1);
+        printRightViewAlgo3(root.left, current + 1);
+
+        
+}
+
 const root = new Node(10);
 root.left = new Node(20);
 root.right = new Node(30);
@@ -109,7 +124,9 @@ root.right.right.right = new Node(70);
 
 // printRightViewAlgo1(root);
 
-printRightViewAlgo2(root);
+// printRightViewAlgo2(root);
+
+printRightViewAlgo3(root, 0);
 
 
 
