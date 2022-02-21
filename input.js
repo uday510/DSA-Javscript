@@ -50,6 +50,7 @@ function processArray(arr) {
     }
     return result;
 }
+
 function main() {
 
     let t = Number(readline()); //! here t is currentLine[0];

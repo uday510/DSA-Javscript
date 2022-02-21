@@ -18,7 +18,6 @@ function matchingBrackets(string) {
         return stack.length === 0;
     }
 
-
     let string = '(({}}[]()))';
 
 
