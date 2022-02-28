@@ -2,7 +2,8 @@
 
 // using namespace std;
 
-// TODO O(N) | 0(N) SPACE
+//!  O(n) Time | O(n) Space
+
 // int getNthFib(int n) {
 //     if ( n == 1) return 0;
 //     else if (n == 2) return 1;

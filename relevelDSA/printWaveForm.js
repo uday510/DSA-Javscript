@@ -14,7 +14,7 @@ function wavePrint(arr) {
             //! even column
             for(let row = 0; row < n; row++) {
                 result += arr[row][col] + " ";
-            }
+            }           
         } else {
             //! odd column
             for(let row = n - 1; row >= 0; row--) {
