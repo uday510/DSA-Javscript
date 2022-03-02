@@ -1,5 +1,5 @@
 //! brute force or Naive approach
-
+//! time O((m - n + 1)*n) --> O(m*n) | space O(1)
 function string_matching_naive(s, p) {
     let m = s.length;
     let n = p.length;

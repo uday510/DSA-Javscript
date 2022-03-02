@@ -29,7 +29,6 @@ function allocate_min_no_of_pages(books, students) {
     }
     return ans;  
 }
-
 let array = [12, 34, 67, 90];
 let students = 2;
 console.log(allocate_min_no_of_pages(array, students));
