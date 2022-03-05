@@ -37,4 +37,4 @@ function knuth_morris_pratt(str, pattern) {
     if(j == m) return true;
     return false;
 }
-console.log(knuth_morris_pratt("abcabcabc", "abcd"));
+console.log(knuth_morris_pratt("aefoaefcdaefcdaed", "aefcdaed"));
