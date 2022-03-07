@@ -1,52 +1,45 @@
-
-
-let arr = [3, 5, -4, 8, 11, 1, -1, 6];
-let targetSum = 10;
-
-/** 
- * ! O(n^2)
- 
-function twoNumberSum(arr, targetSum) {
-    if(arr.length == 0 ) return -1;
-
-    for(let i = 0; i < arr.length - 1; i++) {
-        const firstNum = arr[i];
-        for(let j = i + 1; j < arr.length; j++) {
-            const secondNum = arr[j];
-            if(firstNum + secondNum == targetSum) {
-            return [firstNum, secondNum];
-            }
-        }
-    }
+//! O(nlogn) time | O(1) space
+function twoNumberSum(array, targetSum) {
+  array.sort((a, b) => a - b);
+	let left = 0;
+	let right = array.length - 1;
+	while(left < right) {
+		const currentSum = array[left] + array[right];
+		if(currentSum == targetSum) {
+			return [array[left], array[right]];
+		} else if(currentSum < targetSum) {
+			left++
+		} else if(currentSum > targetSum) {
+			right--;
+		}
+	} return [];
 }
 
-console.log(twoNumberSum(arr, targetSum));
-
-*/
-
-/** 
- * ! O(nlogn)
- 
-function twoNumberSum(arr, targetSum) {
-    if(arr.length == 0 ) return -1;
-
-    arr.sort( (a, b) => a - b);
-
-    let i = 0;
-    let j = arr.length - 1;
-
-    while(i < j) {
-        const currentSum = arr[i] + arr[j];
-        if(currentSum === targetSum) {
-            return [arr[i], arr[j]];
-        } else if (currentSum < targetSum) {
-            i++;
-        } else if(currentSum > targetSum) {
-            j--;
-        }
-    }
+//! O(n) time | O(n) space
+function twoNumberSum(array, targetSum) {
+  const nums = {};
+	for(const x of array) {
+		//? x + y == targetSum.
+		const y = targetSum - x;
+		if(y in nums) {
+			return [x, y];	
+		} else {
+			nums[x] = true;
+		}
+	} 
+	return [];
 }
 
-console.log(twoNumberSum(arr, targetSum));
-
-*/
+//! O(n^2) time | O(1) space
+function twoNumberSum(array, targetSum) {
+ for(let i = 0; i < array.length; i++) {
+	 const firstNum = array[i];
+	 for(let j = i + 1; j < array.length; j++) {
+		 const secondNum = array[j];
+		 if(firstNum + secondNum == targetSum) {
+			 return [firstNum, secondNum];
+		 }
+	 }
+ }
+ return [];
+}
