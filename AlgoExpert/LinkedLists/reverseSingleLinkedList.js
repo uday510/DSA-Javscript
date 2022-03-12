@@ -41,38 +41,22 @@ class SingleLinkedList { //! linkedlist class
             }
     }
 
-    // reverseLinkedList() {
-    //     let prev = null;
-    //     let current = this.head;
-    // while (current) {
-    //     let following = current.next;
-    //     current.next = prev;
-    //     prev = current;
-    //     current = following;
-    // }
-    //     let s = prev;
-    //         while(s) {
-    //         console.log(s);
-    //         s = s.next;
-    //         }
-    // }
-
     reverseLinkedList() {
-        let p1 = null;
-        let p2 = this.head;
-        // let p3 = this.head;
-        while(p2) {
-            const p3 = p2.next;           
-            p2.next = p1;
-            p1 = p2;
-            p2 = p3;
-        }
-        let s = p1;
+        let prev = null;
+        let current = this.head;
+    while (current) {
+        let following = current.next;
+        current.next = prev;
+        prev = current;
+        current = following;
+    }
+        let s = prev;
             while(s) {
             console.log(s);
             s = s.next;
             }
     }
+
 }
 let singleLinkedList = new SingleLinkedList();
 singleLinkedList.insertElementAtStart(10);

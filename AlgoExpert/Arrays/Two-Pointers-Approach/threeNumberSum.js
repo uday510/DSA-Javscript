@@ -20,8 +20,6 @@ function threeNumberSum(array, targetSum) {
                 right--;
             }
         }
-
-
     }
     return triplets;
 }
@@ -43,7 +41,7 @@ for(let i = 0; i <= array.length - 1; i++) {
         let b = array[j];
         for(let k = j + 1; k <= array.length - 1; k++) {
             let c = array[k];
-             let d = a + b + c;
+            let d = a + b + c;
             if(d === targetSum) {
                 result.push([a, b, c]); 
             }
