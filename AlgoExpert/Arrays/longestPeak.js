@@ -9,7 +9,7 @@ function longestPeak(array) {
 			continue;
 		}
 		let leftIdx = i - 2;
-	while(leftIdx >= 0 && array[leftIdx] < array[leftIdx   + 1] ) {
+	while(leftIdx >= 0 && array[leftIdx] < array[leftIdx + 1] ) {
 		leftIdx--;
 	}
 		let rightIdx = i + 2;

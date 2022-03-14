@@ -45,10 +45,12 @@ function arrayOfProducts(array) {
 		for(let j = 0; j < array.length; j++) {
 			  if(i != j) {
 					runningProduct *= array[j];
-				}
-			products[i] = runningProduct;
-		}
+				}				
+		} 
+		products[i] = runningProduct;
+		
 	}
-
 	return products;
 }
+
+console.log(arrayOfProducts([5, 1, 4, 2]));

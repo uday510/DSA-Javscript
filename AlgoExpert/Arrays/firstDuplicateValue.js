@@ -32,3 +32,4 @@ let minimumSecondIndex = array.length;
 	
 	return array[minimumSecondIndex];
 }
+
