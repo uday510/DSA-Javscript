@@ -1,4 +1,5 @@
-  //! O(n^2) | space O(n)
+//? https://www.algoexpert.io/questions/Three%20Number%20Sum
+//! O(n^2) | space O(n)
 function threeNumberSum(array, targetSum) {
     array.sort( (a, b) => a - b);
     let triplets = [];

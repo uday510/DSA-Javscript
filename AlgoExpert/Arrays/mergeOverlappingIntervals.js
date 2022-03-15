@@ -1,4 +1,5 @@
-// //! O(nlogn) time | O(n) space
+//? https://www.algoexpert.io/questions/Merge%20Overlapping%20Intervals
+ //! O(nlogn) time | O(n) space
 function mergeOverlappingIntervals(intervals) {
 const sortedIntervals = intervals.sort((a, b) => a[0] - b[0]);
 

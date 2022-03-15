@@ -1,3 +1,4 @@
+
 //! O(n) time | O(1) space
 function isMonotonic(array) {
 if(array.length <= 2) return true;

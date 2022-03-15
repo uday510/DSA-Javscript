@@ -1,3 +1,4 @@
+//! https://www.algoexpert.io/questions/Sorted%20Squared%20Array
 //! O(nlogn) time | O(n) space
 function sortedSquaredArray(array) {
 	const sortedSquares = new Array(array.length).fill(0);
