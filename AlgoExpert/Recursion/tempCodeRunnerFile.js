@@ -1,0 +1,2 @@
+
+//     const ele = array[idx];
