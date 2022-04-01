@@ -14,7 +14,6 @@ function sortKSortedArray(array, k) {
 		const currentElement = array[idx];
 		minHeapWithElements.insert(currentElement);
 	}
-		
 		while(!minHeapWithElements.isEmpty()) {
 			const minElement = minHeapWithElements.remove();
 			array[nextIndexToInsertElement] = minElement;

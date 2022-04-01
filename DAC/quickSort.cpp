@@ -12,6 +12,7 @@ void swap(int *i, int *j) {
     *i = *j;
     *j = temp;
 }
+
 int partition(int arr[], int p, int q) {
     int i = p;
     int x = arr[i]; // ! PIVOT
@@ -25,6 +26,7 @@ int partition(int arr[], int p, int q) {
     swap(&arr[i], &arr[p]);
     return i;
 }
+
 int quickSort(int arr[], int p, int q) {
     // if (p >= q) return;
     // else {
@@ -49,6 +51,7 @@ int quickSort(int arr[], int p, int q) {
         }
     }
 }
+
 int main () {
 
     int arr[] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};

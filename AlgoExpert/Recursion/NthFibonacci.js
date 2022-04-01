@@ -10,7 +10,7 @@ function getNthFib(n) {
         lastTwo[1] = nextFib;
         counter++;
     }
-    return n > 1 ? lastTwo[0] : lastTwo[1];
+    return n > 1 ? lastTwo[1] : lastTwo[0];
 }
 
 //! O(n) time | O(n) space | DynamicProgramming

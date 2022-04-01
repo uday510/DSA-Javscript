@@ -19,11 +19,13 @@ function downheapify(arr, idx) {
             idx = largestIdx;
     }
 }
+
 function buildHeap(arr) {
     for(let i = arr.length - 1; i >= 0; i--) {
         downheapify(arr, i);
     }
     return arr;
 }
+
 let arr = [7, 9, 1, 3, 10, -2, 6, 5];
 console.log(buildHeap(arr));

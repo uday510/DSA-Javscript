@@ -15,11 +15,11 @@ int merge(int arr[], int start, int mid, int end)
 
     for (int i = 0; i < leftSubArraySize; i++)
     {
-        leftSubArray[i] = arr[i + start];
+        leftSubArray[i] = arr[i + start + i];
     }
     for (int i = 0; i < rightSubArraySize; i++)
     {
-        rightSubArray[i] = arr[i + mid + 1];
+        rightSubArray[i] = arr[i + mid + i];
     }
 
     int i = 0;
@@ -39,6 +39,7 @@ int merge(int arr[], int start, int mid, int end)
             inversions += leftSubArraySize - i;
         }
     }
+    
     while (i < leftSubArraySize)
     {
         arr[k++] = leftSubArray[i++];
