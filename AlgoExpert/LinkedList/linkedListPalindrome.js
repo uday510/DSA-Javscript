@@ -17,7 +17,7 @@ function linkedListPalindrome(head) {
         fastNode = fastNode.next.next;
     }
 
-    let reversedSecondHalfNode = reverseLinkedList(slow);
+    let reversedSecondHalfNode = reverseLinkedList(slowNode);
     let firstHalfNode = head;
 
     while(reversedSecondHalfNode != null) {
