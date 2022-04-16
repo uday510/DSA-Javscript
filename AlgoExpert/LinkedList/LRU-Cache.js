@@ -1,9 +1,9 @@
 class LRUCache {
   constructor(maxSize) {
-   this.cache = {};
-	 this.maxSize = maxSize || 1;
-	 this.currentSize = 0;
-	 this.listOfMostRecent = new DoubleLinkedList();
+    this.cache = {};
+	this.maxSize = maxSize || 1;
+	this.currentSize = 0;
+	this.listOfMostRecent = new DoubleLinkedList();
   }
 
 	//! O(1) time | O(1) space
@@ -19,7 +19,7 @@ class LRUCache {
 		this.replaceKey(key, value);
 	}
 	this.updateMostRecent(this.cache[key]);
-	}
+}
 	//! O(1) time | O(1) space
   getValueFromKey(key) {
     if (!(key in this.cache)) return null;
