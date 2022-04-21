@@ -62,6 +62,4 @@ function getInorderTraversalOrder(node, order = []) {
     getInorderTraversalOrder(node.right, order);
     
     return order;
-
-
 }

@@ -1,5 +1,6 @@
 //! O(n) time | O(logn) space
 
+//! Facebook
 function maxPathSum(tree) {
     const [_, maxSum] = findMaxSum(tree);
     return maxSum;

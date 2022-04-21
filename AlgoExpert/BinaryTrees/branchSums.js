@@ -27,8 +27,8 @@ function calculateBranchSums(node, runningSum, sums) {
 		sums.push(newRunningSum);
 		return;
 	}
-		calculateBranchSums(node.left, newRunningSum, sums);
-	  calculateBranchSums(node.right, newRunningSum, sums);
+	calculateBranchSums(node.left, newRunningSum, sums);
+	calculateBranchSums(node.right, newRunningSum, sums);
 }
 
 
