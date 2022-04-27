@@ -10,7 +10,7 @@ function flatten(node) {
     
     flatten(node.right);
     flatten(node.left);
-
+ 
     node.right = previousNode;
     node.left = null;
     previousNode = node;
@@ -33,4 +33,6 @@ function flatten(root) {
         currentNode = currentNode.right;
     }
 };
+
+
 
