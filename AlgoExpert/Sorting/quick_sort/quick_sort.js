@@ -8,7 +8,7 @@ function quickSort(array) {
 }
 
 function quickSortHelper(array, startIdx, endIdx) {
-    if(!(startIdx < endIdx)) return array[startIdx];
+    if(endIdx < startIdx) return array[startIdx];
     else {
         let m = partition(array, startIdx, endIdx);
         quickSortHelper(array, startIdx, m - 1);
