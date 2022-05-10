@@ -15,6 +15,7 @@ function removeDuplicatesFromLinkedList(linkedList) {
 		  temp.next = null;
 	}
 	currentNode.next = nextDistinctNode;
-	currentNode = nextDistinctNode;	
+	currentNode = currentNode.next;	
  }
+ return linkedList;
 }
