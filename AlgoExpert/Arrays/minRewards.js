@@ -1,3 +1,4 @@
+//! https://leetcode.com/problems/candy/
 //! O(n) time | O(n) space
 function minRewards(scores) {
     let rewards = scores.maps(_ => 1);
